@@ -92,10 +92,11 @@ cd dist && http-server
 - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
 - [`prettier-webpack-plugin`](https://github.com/hawkins/prettier-webpack-plugin) - Prettier configuration for webpack
 
+### vue configuration
+- [`vue-loader`](https://github.com/vuejs/vue-loader) - webpack loader for Vue Single-File Components
+- [`vue-template-compiler`](https://github.com/vuejs/vue-template-es2015-compiler) - Support a subset of handy ES2015 features in Vue 2.0 templates.
+
 ## Author
 
-- [Tania Rascia](https://www.taniarascia.com)
+- [Jerry yang](https://yangchaojie.github.io/)
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
