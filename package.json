@@ -1,9 +1,9 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "webpack5-vue",
   "version": "2.0.1",
   "description": "Sensible webpack 5 boilerplate using Babel and PostCSS with a hot dev server and an optimized production build.",
   "main": "index.js",
-  "author": "Tania Rascia",
+  "author": "jerry yang",
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
@@ -13,7 +13,7 @@
   "keywords": [
     "webpack",
     "webpack 5",
-    "webpack boilerplate"
+    "webpack vue"
   ],
   "devDependencies": {
     "@babel/core": "^7.13.14",
@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:taniarascia/webpack-boilerplate"
+    "url": "https://github.com/YangChaoJie/webpack5-vue.git"
   },
   "dependencies": {
     "vue": "^2.6.12"
