@@ -8,7 +8,7 @@ const Webpack = require('webpack');
 const paths = require('./paths')
 const portfinder = require('portfinder');
 const Promise = require('pinkie-promise');
-
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 module.exports = {
   // Where webpack looks to start building the bundle
   entry: [paths.src + '/main.js'],
@@ -19,7 +19,9 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: '/',
   },
-
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
+  },
   // Customize the webpack build process
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding 每次编译的时候清空之前的dist

@@ -12,6 +12,20 @@ module.exports = merge(common, {
     path: paths.build,
     publicPath: '/',
     filename: 'js/[name].[contenthash].bundle.js',
+    library: 'VueVideoPlayer',
+    libraryTarget: 'umd'
+  },
+  entry: {
+    'vue-video-player': './src/index.js'
+  },
+  externals: {
+    'video.js': {
+        root: 'videojs',
+        commonjs: 'video.js',
+        commonjs2: 'video.js',
+        amd: 'videojs'
+    },
+    'object-assign': 'object-assign'
   },
   module: {
     rules: [

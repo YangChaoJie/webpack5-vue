@@ -8,3 +8,7 @@ let json = {
 console.log(JSON.stringify(json));
 
 console.log(navigator.userAgent.toLowerCase())
+
+export function testFunction () {
+  console.log(hahah);
+}
